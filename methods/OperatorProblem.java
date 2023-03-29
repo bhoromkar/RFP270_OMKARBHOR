@@ -1,2 +1,4 @@
-package com.bridgelabz.methods;public class OperatorProblem {
+package com.bridgelabz.methods;
+
+public class OperatorProblem {
 }

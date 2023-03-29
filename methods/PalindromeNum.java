@@ -8,11 +8,11 @@ public class PalindromeNum {
         System.out.println("Enter an number for palindrome:: ");
         int num = sc.nextInt();
         int number= num;
-        int sum=0;
+        //int sum=0;
         int reverse=0;
-        while (num>0) {
+        while (num>0){
             int remainder = num % 10;
-            reverse = sum * 10 +remainder;
+            reverse = (reverse * 10 )+remainder;
             num=num/10;
         }
         if (reverse==number){

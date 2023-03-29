@@ -8,5 +8,9 @@ public class increment {
         System.out.println(y);
         System.out.println(res);
 
+        for (int i=0;i<10;++i){
+            System.out.println(i);
+        }
+
     }
 }

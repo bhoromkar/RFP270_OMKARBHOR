@@ -224,25 +224,75 @@ static void month(int month) {
             System.out.println("none");
     }
 }
-static void getsum(){
+    static void getsum(){
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter an x :: ");
-  int x = sc.nextInt();
+    int x = sc.nextInt();
     System.out.println("Enter an y :: ");
-  int y = sc.nextInt();
+    int y = sc.nextInt();
 
     int sum = x+y;
     System.out.println(sum);
 }
 
-     static void getchar() {
+    static void getchar() {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter an name :: ");
     String str = sc.nextLine();
     System.out.println(str);
 }
 
+    static void sumnum(){
+    int sum=0;
+    int  n=10;
+    int i=0;
+    while(i<=n){
+        sum=sum+i;
+        ++i;
+    }
+        System.out.println(sum);
+            //return sum;
+}
 
+static int reversenum(int number){
+    int n=number;
+   int remainder=0;
+   //int sum=0;
+   int reverse=0;
+   while(n>0) {
+       remainder = n % 10;
+       reverse = reverse * 10 + remainder;
+       n = n / 10;
+   }
+       return reverse;
+}
+
+static void additionnum(){
+    int sum =0;
+    int k;
+    int num=10;
+    for(k=0;k<=num;++k){
+        sum=sum+k;
+}
+    System.out.println(sum);
+}
+static int revnum(){
+    int number =121;
+    int rev=0;
+    int remain=0;
+    int num=number;
+    for(;num!=0;){
+        remain=num%10;
+        rev=(rev*10)+remain;
+        num=num/10;
+    }
+    if(number==rev){
+        System.out.println("the number is palindrome");
+    }else{
+        System.out.println("the number is not palindrome");
+    }
+     return rev;
+}
     public static void main(String[] args) {
          helloworld();
         System.out.println("Default value of boolean is:" +val1);
@@ -264,5 +314,14 @@ static void getsum(){
         month(12);
         getsum();
         getchar();
+       // int sum = sumnum();
+        //System.out.println(sum);
+
+        sumnum();
+        int rev = reversenum(457164987);
+        System.out.println(rev);
+        additionnum();
+        int rev1 =revnum();
+        System.out.println(rev1);
     }
 }
