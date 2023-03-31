@@ -1,6 +1,5 @@
 package com.bridgelabz.methods;
 import java.util.Scanner;
-import java.util.zip.ZipEntry;
 
 public class DayOnePractice {
 
@@ -19,86 +18,72 @@ public class DayOnePractice {
     static long f;
     static char g;
 
-static void checkstring(){
-    String a1 = "omkarbhor";
-    String b1 = "omkarbhor";
-    if (a1==b1) {
-        System.out.println("Both the string are same");
-    }
-    else {
-        System.out.println("Both the string are not same");
-    }
-}
-
-static void leapyear(int year) {
-    //int year = 1999
-    if (year > 1583) {
-        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println("The year is leap year");
+    static void checkstring() {
+        String a1 = "omkarbhor";
+        String b1 = "omkarbhor";
+        if (a1 == b1) {
+            System.out.println("Both the string are same");
         } else {
-            System.out.println("The year is not leap year");
+            System.out.println("Both the string are not same");
         }
-    } else {
-        System.out.println("year is less than 1582");
-    }
-}
-
-static void singledigit(int digit){
-    if(digit==1){
-        System.out.println("one");
-    }
-    else if (digit==2) {
-        System.out.println("two");
-    }
-    else if (digit==3) {
-        System.out.println("three");
-    }
-    else if (digit==4) {
-        System.out.println("four");
-    }
-    else if (digit==5) {
-        System.out.println("five");
-    }
-    else if (digit==6) {
-        System.out.println("six");
-    }
-    else if (digit==7) {
-        System.out.println("seven");
-    }
-    else if (digit==8) {
-        System.out.println("eight");
-    }
-    else if (digit==9) {
-        System.out.println("nine");
-    }
-    else {
-        System.out.println("none");
     }
 
-}
+    static void leapyear(int year) {
+        //int year = 1999
+        if (year > 1583) {
+            if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+                System.out.println("The year is leap year");
+            } else {
+                System.out.println("The year is not leap year");
+            }
+        } else {
+            System.out.println("year is less than 1582");
+        }
+    }
 
-static void unitdigit(int num){
-    if(num<=9){
-        System.out.println("unit");
-    }
-    else if (num<=99) {
-        System.out.println("ten");
-    }
-    else if (num<=999) {
-        System.out.println("hundred");
-    }
-    else if (num<=9999) {
-        System.out.println("thousand");
-    }
-    else{
-        System.out.println("none");
-    }
+    static void singledigit(int digit) {
+        if (digit == 1) {
+            System.out.println("one");
+        } else if (digit == 2) {
+            System.out.println("two");
+        } else if (digit == 3) {
+            System.out.println("three");
+        } else if (digit == 4) {
+            System.out.println("four");
+        } else if (digit == 5) {
+            System.out.println("five");
+        } else if (digit == 6) {
+            System.out.println("six");
+        } else if (digit == 7) {
+            System.out.println("seven");
+        } else if (digit == 8) {
+            System.out.println("eight");
+        } else if (digit == 9) {
+            System.out.println("nine");
+        } else {
+            System.out.println("none");
+        }
 
     }
 
-    static void alphabet(char ch){
+    static void unitdigit(int num) {
+        if (num <= 9) {
+            System.out.println("unit");
+        } else if (num <= 99) {
+            System.out.println("ten");
+        } else if (num <= 999) {
+            System.out.println("hundred");
+        } else if (num <= 9999) {
+            System.out.println("thousand");
+        } else {
+            System.out.println("none");
+        }
 
-        switch(ch){
+    }
+
+    static void alphabet(char ch) {
+
+        switch (ch) {
 
             case 'A':
                 System.out.println("vowel");
@@ -115,64 +100,64 @@ static void unitdigit(int num){
             case 'E':
                 System.out.println("VOWEL");
                 break;
-                case 'F':
+            case 'F':
                 System.out.println("consonant");
                 break;
-                case 'G':
+            case 'G':
                 System.out.println("consonant");
                 break;
-                case 'H':
+            case 'H':
                 System.out.println("consonant");
                 break;
-                case 'I':
+            case 'I':
                 System.out.println("VOWEL");
                 break;
-                case 'J':
+            case 'J':
                 System.out.println("consonant");
                 break;
-                case 'K':
+            case 'K':
                 System.out.println("consonant");
                 break;
-                case 'L':
+            case 'L':
                 System.out.println("consonant");
                 break;
-                case 'M':
+            case 'M':
                 System.out.println("consonant");
                 break;
-                case 'N':
+            case 'N':
                 System.out.println("consonant");
                 break;
-                case 'O':
+            case 'O':
                 System.out.println("VOWEL");
                 break;
-                case 'P':
+            case 'P':
                 System.out.println("consonant");
                 break;
-                case 'Q':
+            case 'Q':
                 System.out.println("consonant");
                 break;
-                case 'R':
+            case 'R':
                 System.out.println("consonant");
                 break;
-                case 'S':
+            case 'S':
                 System.out.println("consonant");
                 break;
-                case 'T':
+            case 'T':
                 System.out.println("consonant");
                 break;
-                case 'U':
+            case 'U':
                 System.out.println("VOWEL");
                 break;
-                case 'V':
+            case 'V':
                 System.out.println("consonant");
                 break;
-                case 'X':
+            case 'X':
                 System.out.println("consonant");
                 break;
-                case 'Y':
+            case 'Y':
                 System.out.println("consonant");
                 break;
-                case 'Z':
+            case 'Z':
                 System.out.println("consonant");
                 break;
             default:
@@ -181,128 +166,132 @@ static void unitdigit(int num){
 
 
     }
-static void month(int month) {
-    switch (month) {
 
-        case 1:
-            System.out.println("january");
-            break;
-        case 2:
-            System.out.println("february");
-            break;
-        case 3:
-            System.out.println("march");
-            break;
-        case 4:
-            System.out.println("april");
-            break;
-        case 5:
-            System.out.println("may");
-            break;
-        case 6:
-            System.out.println("june");
-            break;
-        case 7:
-            System.out.println("july");
-            break;
-        case 8:
-            System.out.println("august");
-            break;
-        case 9:
-            System.out.println("September");
-            break;
-        case 10:
-            System.out.println("October");
-            break;
-        case 11:
-            System.out.println("November");
-            break;
-        case 12:
-            System.out.println("December");
-            break;
-        default:
-            System.out.println("none");
+    static void month(int month) {
+        switch (month) {
+
+            case 1:
+                System.out.println("january");
+                break;
+            case 2:
+                System.out.println("february");
+                break;
+            case 3:
+                System.out.println("march");
+                break;
+            case 4:
+                System.out.println("april");
+                break;
+            case 5:
+                System.out.println("may");
+                break;
+            case 6:
+                System.out.println("june");
+                break;
+            case 7:
+                System.out.println("july");
+                break;
+            case 8:
+                System.out.println("august");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("none");
+        }
     }
-}
-    static void getsum(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter an x :: ");
-    int x = sc.nextInt();
-    System.out.println("Enter an y :: ");
-    int y = sc.nextInt();
 
-    int sum = x+y;
-    System.out.println(sum);
-}
+    static void getsum() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an x :: ");
+        int x = sc.nextInt();
+        System.out.println("Enter an y :: ");
+        int y = sc.nextInt();
+
+        int sum = x + y;
+        System.out.println(sum);
+    }
 
     static void getchar() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter an name :: ");
-    String str = sc.nextLine();
-    System.out.println(str);
-}
-
-    static void sumnum(){
-    int sum=0;
-    int  n=10;
-    int i=0;
-    while(i<=n){
-        sum=sum+i;
-        ++i;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an name :: ");
+        String str = sc.nextLine();
+        System.out.println(str);
     }
+
+    static void sumnum() {
+        int sum = 0;
+        int n = 10;
+        int i = 0;
+        while (i <= n) {
+            sum = sum + i;
+            ++i;
+        }
         System.out.println(sum);
-            //return sum;
-}
-
-static int reversenum(int number){
-    int n=number;
-   int remainder=0;
-   //int sum=0;
-   int reverse=0;
-   while(n>0) {
-       remainder = n % 10;
-       reverse = reverse * 10 + remainder;
-       n = n / 10;
-   }
-       return reverse;
-}
-
-static void additionnum(){
-    int sum =0;
-    int k;
-    int num=10;
-    for(k=0;k<=num;++k){
-        sum=sum+k;
-}
-    System.out.println(sum);
-}
-static int revnum(){
-    int number =121;
-    int rev=0;
-    int remain=0;
-    int num=number;
-    for(;num!=0;){
-        remain=num%10;
-        rev=(rev*10)+remain;
-        num=num/10;
+        //return sum;
     }
-    if(number==rev){
-        System.out.println("the number is palindrome");
-    }else{
-        System.out.println("the number is not palindrome");
+
+    static int reversenum(int number) {
+        int n = number;
+        int remainder = 0;
+        //int sum=0;
+        int reverse = 0;
+        while (n > 0) {
+            remainder = n % 10;
+            reverse = reverse * 10 + remainder;
+            n = n / 10;
+        }
+        return reverse;
     }
-     return rev;
-}
+
+    static void additionnum() {
+        int sum = 0;
+        int k;
+        int num = 10;
+        for (k = 0; k <= num; ++k) {
+            sum = sum + k;
+        }
+        System.out.println(sum);
+    }
+
+    static int revnum() {
+        int number = 121;
+        int rev = 0;
+        int remain = 0;
+        int num = number;
+        for (; num != 0; ) {
+            remain = num % 10;
+            rev = (rev * 10) + remain;
+            num = num / 10;
+        }
+        if (number == rev) {
+            System.out.println("the number is palindrome");
+        } else {
+            System.out.println("the number is not palindrome");
+        }
+        return rev;
+    }
+
     public static void main(String[] args) {
-         helloworld();
-        System.out.println("Default value of boolean is:" +val1);
-        System.out.println("Default value of Double is:" +a);
-        System.out.println("Default value of float is:" +b);
-        System.out.println("Default value of short is:" +c);
-        System.out.println("Default value of byte is:" +d);
-        System.out.println("Default value of int is:" +e);
-        System.out.println("Default value of long is:" +f);
-        System.out.println("Default value of character is:" +g);
+        helloworld();
+        System.out.println("Default value of boolean is:" + val1);
+        System.out.println("Default value of Double is:" + a);
+        System.out.println("Default value of float is:" + b);
+        System.out.println("Default value of short is:" + c);
+        System.out.println("Default value of byte is:" + d);
+        System.out.println("Default value of int is:" + e);
+        System.out.println("Default value of long is:" + f);
+        System.out.println("Default value of character is:" + g);
         checkstring();
 //        Scanner sc = new Scanner(System.in);
 //        int year = sc.nextInt();
@@ -314,14 +303,15 @@ static int revnum(){
         month(12);
         getsum();
         getchar();
-       // int sum = sumnum();
+        // int sum = sumnum();
         //System.out.println(sum);
 
         sumnum();
         int rev = reversenum(457164987);
         System.out.println(rev);
         additionnum();
-        int rev1 =revnum();
+        int rev1 = revnum();
         System.out.println(rev1);
     }
+
 }
