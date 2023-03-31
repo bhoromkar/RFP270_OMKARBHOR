@@ -11,11 +11,13 @@ public class RandomNum {
 //        System.out.println(x3);
 //        int x4 = (int)x3;
 //        System.out.println(x4);
-        //double isPresent = (int) (Math.random() * 10 % 2  );
+        double isPresent = (Math.random() * 10 % 2  );
         // double isPresent = (int) (Math.random() * (max-min+1) + 200 );
-        double isPresent = (int) (Math.random() * 201 + 200 );
-        int present=(int) isPresent;
-        System.out.println(present);
+        //double isPresent = (int) (Math.random() * 201 + 200 );
+       float present=(float) isPresent;
+        //System.out.println(present);
+        Double d = (double) (Math.round(present*10.0)/10.0);
+        System.out.println(d);
 
 
 

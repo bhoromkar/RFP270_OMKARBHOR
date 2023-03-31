@@ -41,9 +41,13 @@ public class LineCompare {
                 System.out.println("line are equals");
             }
 
+//
         }
+
         public static void main(String[] args) {
+            LineCompare l1= new LineCompare(distance);
             linecomrare();
+
         }
     }
 
