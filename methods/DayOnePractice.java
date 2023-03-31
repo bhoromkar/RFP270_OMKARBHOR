@@ -78,16 +78,16 @@ static void singledigit(int digit){
 }
 
 static void unitdigit(int num){
-    if(num==1){
+    if(num<=9){
         System.out.println("unit");
     }
-    else if (num==10) {
+    else if (num<=99) {
         System.out.println("ten");
     }
-    else if (num==100) {
+    else if (num<=999) {
         System.out.println("hundred");
     }
-    else if (num==1000) {
+    else if (num<=9999) {
         System.out.println("thousand");
     }
     else{

@@ -4,10 +4,20 @@ public class DayThreeProblemArray {
     static void printelement(){
         int[] arr={1,5,15,79,31,19,36,72,4,84,15,17,15,19,57,25};
                 for(int i=0;i<arr.length;i++){
-                    System.out.println(arr[i]);
+                    System.out.print(arr[i]+ " ");
                 }
+        System.out.println();
     }
-
+    static void sumarray() {
+        int[] arr = {1, 5, 15, 79, 31, 19, 36, 72, 4, 84, 15, 17, 15, 19, 57, 25};
+        int sum = 0;
+        {
+            for (int i = 0; i < arr.length; i++) {
+                sum = sum + arr[i];
+            }
+            System.out.println("sum of element in array is: " +sum);
+        }
+    }
     static void maxnum(){
         int[] arr={1,5,15,79,31,19,36,72,4,84,15,17,15,19,57,25};
         int large=0;
@@ -29,7 +39,7 @@ public class DayThreeProblemArray {
                 small=arr[i];
             }
         }
-        System.out.println(small);
+        System.out.print(small);
     }
 
 
@@ -38,6 +48,7 @@ public class DayThreeProblemArray {
         System.out.println("******************************************************************************************");
 
         int[] arr = {100, 5, 15, 79, 31, 19, 36, 72, 4, 84, 15, 17, 15, 19, 57, 25};
+        System.out.print("even num in array are : ");
         for (int i = 0; i < arr.length; i++) {
             if(i%2==0){
                 System.out.print(arr[i] + " ");
@@ -49,6 +60,7 @@ public class DayThreeProblemArray {
     }
     static void reversearray(){
         int[] arr = {100, 5, 15, 79, 31, 19, 36, 72, 4, 84, 15, 17, 15, 19, 57, 25};
+        System.out.print("reverse element are : ");
         for (int i = arr.length-1; i >=0; i--) {
             System.out.print(arr[i] + " ");
 
@@ -170,6 +182,7 @@ public class DayThreeProblemArray {
         printelement();
         minnum();
         maxnum();
+        sumarray();
         evenposition();
         reversearray();
         oddposition();
