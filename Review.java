@@ -18,7 +18,7 @@ public class Review {
 
     public static void distinctElement(int arr[], int arr1[]) {
         // boolean distinctValue=false;
-        // int k = 0;
+         int k = 0;
         //int arr[] = {1, 3, 5, 7, 57, 86 ,7 , 8, 17};
         //int arr1[] = {4, 6, 8, 9, 7, 68, 4, 1,320, 7, 17, 15, 5, 5};
         int arr2[] = new int[arr.length];
@@ -33,11 +33,14 @@ public class Review {
                         break;
                     }
                 }
-
-                if (!distinctValue == false) {
-                    for (int k = 0; k < arr2.length; k++)
-                        arr2[i] = arr[i];
+               // if (distinctValue == true)
+                if (distinctValue == true) {
+                   // for (int k = 0; k < arr2.length; k++)
+                   if(k<arr2.length)
+                        arr2[k] = arr[i];
+                            k++;
                     System.out.print(arr[i] + " ");
+
                 }
 
             }
